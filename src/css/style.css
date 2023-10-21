@@ -1,0 +1,163 @@
+body {
+  background: #555;
+  font-family: Roboto, Open Sans, sans-serif;
+}
+
+p {
+  margin: 5px;
+}
+
+.container {
+  position: relative;
+  background: #2b68b8;
+  display: flex;
+  width: 640px;
+  min-height: 300px;
+}
+
+.post-container {
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  border-radius: .25rem;
+  width: 620px;
+  justify-content: flex-end;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: .25rem;
+  width: 600px;
+  margin: 5px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #777;
+}
+
+.post-text {
+  font-size: 14px;
+  color: #000;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.post-coords {
+  font-size: 12px;
+  color: #777;
+}
+
+.del-post-btn {
+  border: none;
+  background-color: #fff;
+  color: #f00;
+  margin: 0;
+  padding: 0px 5px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.del-post-btn:after { content: '\2716'; } 
+
+.add-post-input {
+  border-radius: .25rem;
+  width: 600px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.add-post-btn {
+  border: none;
+  background-color: #1fdb67;
+  color: #fff;
+  font-weight: 700;
+  border-radius: .25rem;
+  margin: 5px;
+  padding: 10px;
+}
+
+.add-cancel-btn {
+  border: none;
+  background-color: #ccc;
+  color: #f00;
+}
+
+.add-cancel-btn:after { content: '\2716'; } 
+
+.add-coords-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.add-coords-header {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.add-coords {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.add-coords-input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.add-coords-cancel-button {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px 10px;
+  cursor: pointer;
+  width: 100px;
+  font-size: 14px;
+}
+
+.add-coords-submit-button {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  width: 60px;
+  font-size: 14px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

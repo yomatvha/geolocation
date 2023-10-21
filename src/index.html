@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="post-container">
+      <div class="post-list"></div>
+      <hr>
+      <form id="add-post" class="add-post-form">
+        <p>Введите текст сообщения:</p>
+        <div>
+          <textarea id="add-post-textarea" class="add-post-input" required></textarea>
+          <button type="submit" class="add-post-btn">Добавить сообщение</button>
+          <button type="reset" class="add-cancel-btn"></button>
+        </div>
+      </form>
+    </div>
+    <form id="add-coords-modal" class="add-coords-form visually-hidden">
+      <header class="add-coords-header">Что-то пошло не так</header>
+      <p>К сожалению, нам не удалось определить ваше местоположение, пожалуйста, дайте разрешение на использование геолокации, либо введите координаты вручную.</p>
+      <p>Широта и долгота через запятую:</p>
+      <input id="add-coords-input-id" type="text" class="add-coords-input">
+      <div class="add-coords">
+        <button class="add-coords-cancel-button" type="reset">Отмена</button>
+        <button class="add-coords-submit-button" type="submit">Ok</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
